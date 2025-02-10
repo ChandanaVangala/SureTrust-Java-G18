@@ -7,6 +7,11 @@ public class PrimeOrComposite {
     {
         Scanner s=new Scanner(System.in);
         int n=s.nextInt();
+        if(n<1)
+        {
+            System.out.println("Neither prime nor composite");
+            return;
+        }
         int f1=0;
         //logic 1: if n value is 1 million and assume each iteration takes 1 rupee, then total cost will be 1 million
         for(int i=1;i<=n;i++)
